@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>koperasi</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 30px;">Koperasi</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="margin-left: 20px;">
+                        <h6 class="text-center mt-3" style="color: var(--bs-teal);background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Dokumen</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Simulasi</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Setting</h6>
+                    </li>
+                </ul><span class="navbar-text actions"> <a class="login" href="#">Keluar</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="card" style="border-radius: 2rem;height: 634px;background: rgb(246,247,255);border-style: none;margin-left: 0px !important;margin: 0px;">
+            <div class="card-body">
+                <div class="card" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                    <h6 class="text-center text-white" style="background: var(--bs-teal);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Buat Dokumen</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Daftar Dokumen</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Update Dokumen</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Pembayaran</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container" style="padding: 30px;">
+                            <div class="row g-0">
+                                <div class="col-6">
+                                    <h6 class="text-secondary">Informasi Jaminan</h6>
+                                </div>
+                                <div class="col text-end"><sup class="text-end text-secondary">Step 3 / 3</sup></div>
+                            </div>
+                            <div class="row g-0 mt-2">
+                                <div class="col-12 text-end"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;" data-bs-target="#modal-1" data-bs-toggle="modal">Tambah Jaminan</button></div>
+                            </div>
+                            <hr>
+                            <div class="row g-0 mt-2">
+                                <div class="col-3"><label class="col-form-label text-secondary" style="font-size: 12px;font-weight: bold;">Nomor</label></div>
+                                <div class="col-2"><label class="col-form-label text-secondary" style="font-size: 12px;font-weight: bold;">Tipe</label></div>
+                                <div class="col-3"><label class="col-form-label text-secondary" style="font-size: 12px;font-weight: bold;">Keterangan</label></div>
+                                <div class="col-2"><label class="col-form-label text-secondary" style="font-size: 12px;font-weight: bold;">Nilai Jaminan</label></div>
+                                <div class="col-2 text-end"><label class="col-form-label text-secondary" style="font-size: 12px;font-weight: bold;">#</label></div>
+                            </div>
+                            <div class="row g-0 mt-2">
+                                <div class="col-3"><label class="col-form-label text-secondary" style="font-size: 12px;">K2131223</label></div>
+                                <div class="col-2"><label class="col-form-label text-secondary" style="font-size: 12px;">SHM</label></div>
+                                <div class="col-3"><label class="col-form-label text-secondary" style="font-size: 12px;">Surat Rumah SHM</label></div>
+                                <div class="col-2"><label class="col-form-label text-secondary" style="font-size: 12px;">Rp. 100.000.000</label></div>
+                                <div class="col-2 text-end"><label class="col-form-label text-danger" style="font-size: 12px;">Hapus</label></div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 100%;margin-bottom: 20px;border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 text-end" style="padding: 20px;"><a class="btn btn-sm" role="button" style="margin-right: 10px;background-color: white;color: var(--bs-teal);border-radius: 1rem;width: 150px;border-style: solid;border-color: var(--bs-teal);font-size: 12px;" href="index.html">Kembali</a><a class="btn btn-sm" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;" href="create_3.html">Selanjutnya</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Tambah Jaminan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>The content of your modal.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
