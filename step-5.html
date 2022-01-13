@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>koperasi</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 30px;">Koperasi</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="margin-left: 20px;">
+                        <h6 class="text-center mt-3" style="color: var(--bs-teal);background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Kredit</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Laporan</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Simulasi</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Setting</h6>
+                    </li>
+                </ul><span class="navbar-text actions"> <a class="login" href="#">Keluar</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="width: 100%;">
+        <div class="card" style="border-radius: 2rem;height: 634px;background: rgb(246,247,255);border-style: none;margin-left: 0px !important;margin: 0px;">
+            <div class="card-body">
+                <div class="card" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Daftar Kredit</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-white" style="background: var(--bs-teal);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Buat Kredit</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Update Kredit</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Pembayaran</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row g-0 mt-2">
+                                <div class="col-3 text-end">
+                                    <h6 class="text-start text-secondary">Langkah Pengisian Form</h6><a class="btn text-start btn-block mt-3" role="button" style="background-color: white;color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;font-weight: bold;padding-left: 20px;border-style: solid;border-color: var(--bs-secondary);" href="index.html">1. Cek NIK &amp; NKK</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-2.html">2. Kelengkapan Data KTP</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-3.html">3. Informasi Tambahan (Opsional)</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-4.html">4. Informasi Kredit</a><a class="btn text-start mt-3" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;font-weight: bold;padding-left: 20px;border-style: none;border-color: var(--bs-secondary);" href="step-5.html">5. Informasi Jaminan</a>
+                                </div>
+                                <div class="col-8 offset-1">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <h6 class="text-secondary">Informasi Jaminan</h6>
+                                        </div>
+                                        <div class="col text-end">
+                                            <div class="dropdown"><button class="btn btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Tambah Jaminan</button>
+                                                <div class="dropdown-menu"><a class="dropdown-item" href="#" data-bs-target="#modal-2" data-bs-toggle="modal">SHM</a><a class="dropdown-item" href="#" data-bs-target="#modal-3" data-bs-toggle="modal">SHGB</a><a class="dropdown-item" href="#" data-bs-target="#modal-1" data-bs-toggle="modal">BPKB</a><a class="dropdown-item" href="#" data-bs-target="#modal-4" data-bs-toggle="modal">Lain-lain</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive mt-3">
+                                        <table class="table">
+                                            <thead style="border-bottom-style: none;">
+                                                <tr>
+                                                    <th>Nomor</th>
+                                                    <th>Tipe</th>
+                                                    <th>Keterangan</th>
+                                                    <th>Nilai Jaminan</th>
+                                                    <th>#</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>WH123</td>
+                                                    <td>SHM</td>
+                                                    <td>SHM rumah</td>
+                                                    <td>Rp. 200.000.000</td>
+                                                    <td colspan="1"><a href="#" style="color: var(--bs-teal);">Edit</a></td>
+                                                </tr>
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 100%;margin-bottom: 20px;border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-end" style="padding: 20px;"><a class="btn btn-sm" role="button" style="background-color: white;color: var(--bs-teal);border-radius: 1rem;width: 150px;font-size: 12px;border-style: solid;border-color: var(--bs-teal);margin-right: 10px;" href="step-4.html">Kembali</a><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Form Jaminan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Jaminan</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tanah</option>
+                                            <option value="13">Tanah dan Bangunan</option>
+                                            <option value="" selected="">Kendaraan</option>
+                                            <option value="">Lain - lain</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Dokumen</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="">BPKB</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor BPKB</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Jenis Kendaraan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Merk</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Model</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tahun</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">No Polisi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Atas Nama</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Mesin</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Rangka</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Masa Berlaku STNK</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Warna</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Fungsi Sehari-hari</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Faktur Pembelian</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kwitansi Jual Beli</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kwitansi Kosong</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">KTP a/n BPKB</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Asuransi</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Status Kepemilikan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kondisi Kendaraan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Kendaraan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Persentase Taksasi</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Taksasi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Persentase Bank</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Harga Bank</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Catatan</label></div>
+                                    <div class="col-9"><textarea class="form-control" style="border-radius: 1rem;width: 100%;border-style: solid;border-color: var(--bs-gray-400);"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Form Jaminan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Jaminan</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tanah</option>
+                                            <option value="13">Tanah dan Bangunan</option>
+                                            <option value="">Kendaraan</option>
+                                            <option value="">Lain - lain</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Dokumen</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">SHM</option>
+                                            <option value="13">SHGB</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Sertifikat</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Alamat</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">RT/RW</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Desa/Kelurahan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kecamatan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kota/Kabupaten</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Provinsi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Atas Nama</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Surat Ukur</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tanggal Surat Ukur</label></div>
+                                    <div class="col-3"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Luas Tanah</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Luas Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Panjang Bangunan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lebar Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Fungsi Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Rumah</option>
+                                            <option value="13">Ruko</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Bentuk Bangunan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tingkat</option>
+                                            <option value="13">Tidak Tingkat</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Konstruksi Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Permanen</option>
+                                            <option value="13">Semi Permanen</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lantai Bangunan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Keramik</option>
+                                            <option value="13">Tegel Biasa</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Dinding Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tembok</option>
+                                            <option value="13">Semi Tembok</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Listrik</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Sumber Air</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">PDAM</option>
+                                            <option value="13">Sumur</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Akses Jalan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tanah</option>
+                                            <option value="13">Batu</option>
+                                            <option value="">Aspal</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Letak Lokasi Terhadap Jalan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Sama</option>
+                                            <option value="13">Lebih Rendah dari Jalan</option>
+                                            <option value="14">Lebih Tinggi dari Jalan</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lingkungan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Perumahan</option>
+                                            <option value="13">Kampung</option>
+                                            <option value="">Pertokoan</option>
+                                            <option value="">Perkantoran</option>
+                                            <option value="">Industri</option>
+                                        </select></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">AJB</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">PBB</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">IMB</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Asuransi</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Tanah</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">NJOP Tanah</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Bangunan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">NJOP Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Persentase Taksasi</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Harga Taksasi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Catatan</label></div>
+                                    <div class="col-9"><textarea class="form-control" style="border-radius: 1rem;width: 100%;border-style: solid;border-color: var(--bs-gray-400);"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-3">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Form Jaminan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Jaminan</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tanah</option>
+                                            <option value="13">Tanah dan Bangunan</option>
+                                            <option value="">Kendaraan</option>
+                                            <option value="">Lain - lain</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Dokumen</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="" selected="">SHM</option>
+                                            <option value="">SHGB</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Sertifikat</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Alamat</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">RT/RW</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Desa/Kelurahan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kecamatan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Kota/Kabupaten</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Provinsi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Atas Nama</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Berlaku Sampai</label></div>
+                                    <div class="col-3"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Surat Ukur</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tanggal Surat Ukur</label></div>
+                                    <div class="col-3"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Luas Tanah</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Luas Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Panjang Bangunan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lebar Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Fungsi Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Rumah</option>
+                                            <option value="13">Ruko</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Bentuk Bangunan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tingkat</option>
+                                            <option value="13">Tidak Tingkat</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Konstruksi Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Permanen</option>
+                                            <option value="13">Semi Permanen</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lantai Bangunan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Keramik</option>
+                                            <option value="13">Tegel Biasa</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Dinding Bangunan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tembok</option>
+                                            <option value="13">Semi Tembok</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Listrik</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Sumber Air</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">PDAM</option>
+                                            <option value="13">Sumur</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Akses Jalan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Tanah</option>
+                                            <option value="13">Batu</option>
+                                            <option value="">Aspal</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Letak Lokasi Terhadap Jalan</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Sama</option>
+                                            <option value="13">Lebih Rendah dari Jalan</option>
+                                            <option value="14">Lebih Tinggi dari Jalan</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Lingkungan</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Perumahan</option>
+                                            <option value="13">Kampung</option>
+                                            <option value="">Pertokoan</option>
+                                            <option value="">Perkantoran</option>
+                                            <option value="">Industri</option>
+                                        </select></div>
+                                </div>
+                                <hr>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">AJB</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">PBB</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">IMB</label></div>
+                                    <div class="col-3"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Asuransi</label></div>
+                                    <div class="col"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12" selected="">Ada</option>
+                                            <option value="13">Tidak Ada</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Tanah</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">NJOP Tanah</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nilai Bangunan</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">NJOP Bangunan</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Persentase Taksasi</label></div>
+                                    <div class="col-3"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                    <div class="col-2 offset-1 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Harga Taksasi</label></div>
+                                    <div class="col"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Catatan</label></div>
+                                    <div class="col-9"><textarea class="form-control" style="border-radius: 1rem;width: 100%;border-style: solid;border-color: var(--bs-gray-400);"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-4">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Form Jaminan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Tipe Jaminan</label></div>
+                                    <div class="col-9"><select class="form-control-sm" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border-style: solid;border-color: #d2d8dd;">
+                                            <option value="12">Tanah</option>
+                                            <option value="13">Tanah dan Bangunan</option>
+                                            <option value="">Kendaraan</option>
+                                            <option value="" selected="">Lain - lain</option>
+                                        </select></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Nomor Sertifikat</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;"></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Deskripsi</label></div>
+                                    <div class="col-9"><textarea class="form-control" style="border-radius: 1rem;width: 100%;border-style: solid;border-color: var(--bs-gray-400);"></textarea></div>
+                                </div>
+                                <div class="row g-0 mt-2">
+                                    <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Foto</label></div>
+                                    <div class="col-9"><input class="form-control-sm form-control-sm" type="file"></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-sm" type="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;">Simpan</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
