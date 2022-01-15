@@ -38,8 +38,8 @@
                     <div class="card-body" style="padding: 0px;">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="index.html">Daftar Kredit</a></div>
-                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: white;color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="step-1.html">Buat Kredit</a></div>
+                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: white;color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="index.html">Daftar Kredit</a></div>
+                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="step-1.html">Buat Kredit</a></div>
                                 <div class="col-2">
                                     <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Update Kredit</h6>
                                 </div>
@@ -50,59 +50,82 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-0">
-                    <div class="col-12">
-                        <div class="row g-0">
-                            <div class="col-8">
-                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
-                                    <div class="card-body">
-                                        <div class="container-fluid"></div>
-                                    </div>
+                <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row g-0 mt-2">
+                                <div class="col-3 text-end">
+                                    <h6 class="text-start text-secondary">Langkah Pengisian Form</h6><a class="btn text-start btn-block mt-3" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;font-weight: bold;padding-left: 20px;" href="step-1.html">1. Cari Debitur</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-2.html">2. Data Identitas</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-3.html">3. Data Analisa</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-4.html">4. Informasi Kredit</a><a class="btn text-start mt-3" role="button" style="/*background-color: var(--bs-teal);*/color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 10px;width: 100%;border-style: solid;border-color: var(--bs-secondary);font-weight: bold;padding-left: 20px;" href="step-5.html">5. Informasi Jaminan</a>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;margin-left: 20px;">
-                                    <div class="card-body">
-                                        <div class="container-fluid"></div>
+                                <div class="col-8 offset-1">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <h6 class="text-secondary">Cari Debitur</h6>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
-                            <div class="card-body">
-                                <div class="container-fluid">
+                                    <div class="row g-0 mt-2">
+                                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">NIK / NKK</label></div>
+                                        <div class="col-9">
+                                            <div class="input-group"><input class="form-control form-control-sm" type="text" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;"><button class="btn" type="button" style="color: white;background-color: var(--bs-teal);border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;border-style: none;" data-bs-toggle="modal">Cari</button></div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <div class="row g-0">
+                                        <div class="col-6">
+                                            <h6 class="text-secondary">Informasi NIK &amp; NKK</h6>
+                                        </div>
+                                    </div>
                                     <div class="table-responsive">
                                         <table class="table">
-                                            <thead>
+                                            <thead style="border-bottom-style: none;">
                                                 <tr>
-                                                    <th>Nomor Kredit</th>
-                                                    <th>Debitur</th>
-                                                    <th>Tanggal Kredit</th>
-                                                    <th>Jumlah Kredit</th>
-                                                    <th>Bunga</th>
-                                                    <th>Denda</th>
-                                                    <th>Jenis Kredit</th>
-                                                    <th>Riwayat</th>
                                                     <th></th>
+                                                    <th>Nama</th>
+                                                    <th>NIK</th>
+                                                    <th>NKK</th>
+                                                    <th>Tanggal Lahir</th>
+                                                    <th>Riwayat</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cell 1</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
+                                                    <td><input type="radio" checked="" style="color: var(--bs-teal);background: #ffffff;"></td>
+                                                    <td>Ardian</td>
+                                                    <td>2523-2132-2134</td>
+                                                    <td>1231-1232-1234</td>
+                                                    <td>23-03-1997</td>
+                                                    <td><a href="#" data-bs-target="#modal-1" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="radio" disabled=""></td>
+                                                    <td>Kurniawan</td>
+                                                    <td>2523-2132-2135</td>
+                                                    <td>1231-1232-1234</td>
+                                                    <td>23-03-1997</td>
+                                                    <td>TIdak Ada</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="radio" disabled=""></td>
+                                                    <td>Belum Terdaftar</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr></tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 100%;margin-bottom: 20px;border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-end" style="padding: 20px;"><a class="btn btn-sm" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 150px;font-size: 12px;" href="step-2.html">Selanjutnya</a></div>
                             </div>
                         </div>
                     </div>
