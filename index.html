@@ -7,11 +7,14 @@
     <title>koperasi</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.compiled.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="padding: 0px;/*border-bottom: 1px solid var(--bs-gray-400);*/">
         <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 30px;">Koperasi</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
@@ -32,7 +35,7 @@
         </div>
     </nav>
     <div class="container-fluid" style="width: 100%;">
-        <div class="card" style="border-radius: 2rem;height: 634px;background: rgb(246,247,255);border-style: none;margin-left: 0px !important;margin: 0px;">
+        <div class="card" style="border-radius: 2rem;height: 100%;background: rgb(246,247,255);border-style: none;margin-left: 0px !important;margin: 0px;">
             <div class="card-body">
                 <div class="card" style="border-radius: 2rem;border-style: none;">
                     <div class="card-body" style="padding: 0px;">
@@ -52,21 +55,41 @@
                 </div>
                 <div class="row g-0">
                     <div class="col-12">
-                        <div class="row g-0">
-                            <div class="col-8">
+                        <div class="row g-0 text-end">
+                            <div class="col-6 text-end" style="margin-right: 10px;">
+                                <div class="input-group input-group-sm mt-3"></div>
+                                <div class="input-group"><input class="form-control" type="text" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;border-style: none;background-color: white;" placeholder="Cari Nomor Kredit / Debitur"><button class="btn btn-primary" type="button" style="border-top-right-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Cari</button></div>
+                            </div>
+                            <div class="col text-end" style="margin-right: 10px;"></div>
+                            <div class="col-1 text-end" style="margin-right: 10px;">
                                 <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
-                                    <div class="card-body">
-                                        <div class="container-fluid"></div>
-                                    </div>
+                                    <div class="card-body d-xl-flex justify-content-xl-center align-items-xl-center" style="padding: 5px;"><a class="card-link" href="#" style="margin: 0px;margin-top: 5px;/*padding-bottom: 0px;*/height: 24px;" data-bs-target="#filter" data-bs-toggle="modal"><i class="la la-filter d-inline-block" style="font-size: 20px;color: var(--bs-secondary);"></i>
+                                            <h6 class="d-inline-block" style="transform: scale(0.80);">Filter</h6>
+                                        </a></div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;margin-left: 20px;">
-                                    <div class="card-body">
-                                        <div class="container-fluid"></div>
-                                    </div>
+                            <div class="col-1 text-end">
+                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
+                                    <div class="card-body d-xl-flex justify-content-xl-center align-items-xl-center" style="padding: 5px;"><a class="card-link" href="#" style="margin: 0px;margin-top: 5px;/*padding-bottom: 0px;*/height: 24px;" data-bs-target="#sort" data-bs-toggle="modal"><i class="la la-sort-alpha-asc d-inline-block" style="font-size: 20px;color: var(--bs-secondary);"></i>
+                                            <h6 class="d-inline-block" style="transform: scale(0.80);">Sort</h6>
+                                        </a></div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row g-0 text-end mt-2" style="overflow-x: auto;">
+                            <div class="col-auto text-end" style="margin-right: 10px;">
+                                <div class="input-group"><button class="btn" type="button" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;background-color: white;" data-bs-target="#filter-status" data-bs-toggle="modal">Status: Lunas</button><button class="btn btn-secondary" type="button" style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;">X</button></div>
+                            </div>
+                            <div class="col-auto text-end" style="margin-right: 10px;">
+                                <div class="input-group"><button class="btn" type="button" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;background-color: white;" data-bs-target="#filter-bunga" data-bs-toggle="modal">Bunga: Flat</button><button class="btn btn-secondary" type="button" style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;">X</button></div>
+                            </div>
+                            <div class="col-auto text-end" style="margin-right: 10px;">
+                                <div class="input-group"><button class="btn" type="button" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;background-color: white;" data-bs-target="#filter-nominal" data-bs-toggle="modal">Nominal: Rp. 1.000.000 - Rp.10.000.000</button><button class="btn btn-secondary" type="button" style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;">X</button></div>
+                            </div>
+                            <div class="col-auto text-end" style="margin-right: 10px;">
+                                <div class="input-group"><button class="btn" type="button" style="border-top-left-radius: 1rem;border-bottom-left-radius: 1rem;background-color: white;" data-bs-target="#filter-tanggal-pinjam" data-bs-toggle="modal">Tanggal Pinjam: 10/12/2021-15/01/2022</button><button class="btn btn-secondary" type="button" style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;">X</button></div>
+                            </div>
+                            <div class="col"></div>
                         </div>
                         <div class="card mt-3" style="border-radius: 2rem;border-style: none;">
                             <div class="card-body">
@@ -77,28 +100,195 @@
                                                 <tr>
                                                     <th>Nomor Kredit</th>
                                                     <th>Debitur</th>
+                                                    <th>Tipe Bunga</th>
                                                     <th>Tanggal Kredit</th>
-                                                    <th>Jumlah Kredit</th>
+                                                    <th>Jatuh Tempo</th>
+                                                    <th>Nominal</th>
+                                                    <th>Tenor</th>
                                                     <th>Bunga</th>
                                                     <th>Denda</th>
-                                                    <th>Jenis Kredit</th>
+                                                    <th>Status</th>
                                                     <th>Riwayat</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Cell 1</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 2</td>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
                                                 </tr>
-                                                <tr></tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas<div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Riwayat Kredit</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <thead style="border-bottom-style: none;">
+                                                                                    <tr>
+                                                                                        <th>No Kredit</th>
+                                                                                        <th>Nama</th>
+                                                                                        <th>Pinjaman</th>
+                                                                                        <th>Tanggal Pinjaman</th>
+                                                                                        <th>Jenis</th>
+                                                                                        <th>Status</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>KR-123</td>
+                                                                                        <td>Ardian</td>
+                                                                                        <td>Rp. 10.000.000</td>
+                                                                                        <td>20-10-2021</td>
+                                                                                        <td>Agunan</td>
+                                                                                        <td>Aktif</td>
+                                                                                    </tr>
+                                                                                    <tr></tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                                    <td style="padding-top: 15px;">Ardian</td>
+                                                    <td style="padding-top: 15px;">Flat</td>
+                                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                                    <td style="padding-top: 15px;"><a href="#" data-bs-target="#modal-riwayat" data-bs-toggle="modal" style="color: var(--bs-teal);">1 Kredit</a></td>
+                                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -110,8 +300,159 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-status" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Status Pembayaran</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-bunga" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Tipe Bunga</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-nominal" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Nominal Kredit</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-tenor" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Tenor Pembayaran</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-tanggal-pinjam" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Tanggal Kredit</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-target="#filter-jatuh-tempo" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Tanggal Jatuh Tempo</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="sort">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sort</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" checked=""><span style="font-size: 14px;">Urutkan Debitur A - Z</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Debitur Z - A</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Peminjaman Terbaru</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Peminjaman Terlama</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Jatuh Tempo Terdekat</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Jatuh Tempo Terjauh</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Nominal Tertinggi</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><input type="radio" style="margin-right: 20px;" disabled=""><span style="font-size: 14px;">Urutkan Nominal Terendah</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-status">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Status Pembayaran</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Semua</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Lunas</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Belum Lunas</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-bunga">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Tipe Bunga</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Semua</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Flat</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Anuitas</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Efektif</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Musiman</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-nominal">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Nominal Kredit</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Mulai</label></div>
+                        <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;" placeholder="Rp. 1.000.000"></div>
+                    </div>
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Sampai</label></div>
+                        <div class="col-9"><input class="form-control-sm form-control" type="text" style="border-radius: 1rem;" placeholder="Rp. 10.000.000"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-style: none;">Simpan</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-tenor">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Tenor Pembayaran</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Semua</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Harian</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Mingguan</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Bulanan</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-tanggal-pinjam">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Tanggal Kredit</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Mulai</label></div>
+                        <div class="col-9"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                    </div>
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Sampai</label></div>
+                        <div class="col-9"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-style: none;">Simpan</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="filter-jatuh-tempo">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter Jatuh Tempo</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Mulai</label></div>
+                        <div class="col-9"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                    </div>
+                    <div class="row g-0 mt-2">
+                        <div class="col-3 text-start"><label class="col-form-label text-secondary" style="font-size: 12px;">Sampai</label></div>
+                        <div class="col-9"><input class="form-control-sm" type="date" style="border-radius: 1rem;width: 100%;color: var(--bs-secondary);border: 1px solid #d2d8dd ;"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary btn-sm" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-style: none;">Simpan</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-riwayat">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Riwayat Kredit</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -119,70 +460,35 @@
                 <div class="modal-body">
                     <div class="table-responsive">
                         <table class="table">
-                            <thead style="border-bottom-style: none;">
+                            <thead>
                                 <tr>
-                                    <th>No Kredit</th>
-                                    <th>Nama</th>
-                                    <th>Pinjaman</th>
-                                    <th>Tanggal Pinjaman</th>
-                                    <th>Jenis</th>
+                                    <th>Nomor Kredit</th>
+                                    <th>Debitur</th>
+                                    <th>Tipe Bunga</th>
+                                    <th>Tanggal Kredit</th>
+                                    <th>Nominal</th>
+                                    <th>Tenor</th>
+                                    <th>Bunga</th>
+                                    <th>Denda</th>
+                                    <th>Jatuh Tempo</th>
                                     <th>Status</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>KR-123</td>
-                                    <td>Ardian</td>
-                                    <td>Rp. 10.000.000</td>
-                                    <td>20-10-2021</td>
-                                    <td>Agunan</td>
-                                    <td>Aktif</td>
+                                    <td style="padding-top: 15px;">KR-123412341234</td>
+                                    <td style="padding-top: 15px;">Ardian</td>
+                                    <td style="padding-top: 15px;">Flat</td>
+                                    <td style="padding-top: 15px;">10/01/2022</td>
+                                    <td style="padding-top: 15px;">Rp.10.000.000</td>
+                                    <td style="padding-top: 15px;">10 x 1 Bulan</td>
+                                    <td style="padding-top: 15px;">1% / Bulan</td>
+                                    <td style="padding-top: 15px;">0.1% / hari</td>
+                                    <td style="padding-top: 15px;">25/01/2022</td>
+                                    <td style="padding-top: 15px;">Belum Lunas</td>
+                                    <td><button class="btn btn-primary" type="button" style="border-radius: 1rem;background-color: var(--bs-teal);border-bottom-right-radius: 1rem;border-color: var(--bs-teal);">Detail</button></td>
                                 </tr>
-                                <tr></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Informasi NIK &amp; NKK</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead style="border-bottom-style: none;">
-                                <tr>
-                                    <th>Nama</th>
-                                    <th>NIK</th>
-                                    <th>NKK</th>
-                                    <th>Tanggal Lahir</th>
-                                    <th>Riwayat</th>
-                                    <th>#</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ardian</td>
-                                    <td>2523-2132-2134</td>
-                                    <td>1231-1232-1234</td>
-                                    <td>23-03-1997</td>
-                                    <td><a href="#" data-bs-target="#modal-1" data-bs-toggle="modal">1 Kredit</a></td>
-                                    <td><a class="btn btn-sm" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 60px;font-size: 12px;padding: 2px;" href="step-2.html">Pilih</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Kurniawan</td>
-                                    <td>2523-2132-2135</td>
-                                    <td>1231-1232-1234</td>
-                                    <td>23-03-1997</td>
-                                    <td>TIdak Ada</td>
-                                    <td><a class="btn btn-sm" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;width: 60px;font-size: 12px;padding: 2px;" href="step-2.html">Pilih</a></td>
-                                </tr>
-                                <tr></tr>
                             </tbody>
                         </table>
                     </div>
