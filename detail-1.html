@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>koperasi</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.compiled.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="padding: 0px;/*border-bottom: 1px solid var(--bs-gray-400);*/">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="margin-left: 30px;">Koperasi</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="margin-left: 20px;">
+                        <h6 class="text-center mt-3" style="color: var(--bs-teal);background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Kredit</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Laporan</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Simulasi</h6>
+                    </li>
+                    <li class="nav-item">
+                        <h6 class="text-center text-secondary mt-3" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Setting</h6>
+                    </li>
+                </ul><span class="navbar-text actions"> <a class="login" href="#">Keluar</a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="width: 100%;">
+        <div class="card" style="border-radius: 2rem;height: 100%;background: rgb(246,247,255);border-style: none;margin-left: 0px !important;margin: 0px;">
+            <div class="card-body">
+                <div class="card" style="border-radius: 2rem;border-style: none;">
+                    <div class="card-body" style="padding: 0px;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: var(--bs-teal);color: white;border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="index.html">Daftar Kredit</a></div>
+                                <div class="col-2"><a class="btn btn-sm text-center btn-block mt-3" role="button" style="background-color: white;color: var(--bs-secondary);border-radius: 1rem;font-size: 12px;padding: 5px;width: 100%;font-weight: bold;" href="step-1.html">Buat Kredit</a></div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Update Kredit</h6>
+                                </div>
+                                <div class="col-2">
+                                    <h6 class="text-center text-secondary" style="background: var(--bs-body-bg);border-radius: 1rem;border-style: none;margin: 10px 0px;padding: 10px;transform: scale(0.80);">Pembayaran</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;">
+                            <div class="card-body" style="padding: 10px;padding-right: 0px;padding-left: 0px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h6 class="text-dark" style="font-size: 16px;color: var(--bs-teal);">KR-1234-1234-1234</h6>
+                                            <h6 class="text-secondary" style="font-size: 12px;color: var(--bs-teal);">Kredit / KR-1234-1234-1234</h6>
+                                        </div>
+                                        <div class="col-1" style="text-align: center;"><a href="#" style="text-align: center;"><i class="la la-check mt-2" style="font-size: 30px;color: var(--bs-teal);text-align: center;"></i>
+                                                <h6 class="mt-2" style="font-size: 12px;color: var(--bs-teal);">Setujui</h6>
+                                            </a></div>
+                                        <div class="col-1" style="text-align: center;"><a href="#" style="text-align: center;"><i class="la la-times mt-2" style="font-size: 30px;color: var(--bs-danger);text-align: center;"></i>
+                                                <h6 class="mt-2" style="font-size: 12px;color: var(--bs-danger);">Tolak</h6>
+                                            </a></div>
+                                        <div class="col-1" style="text-align: center;"><a href="#" style="text-align: center;" data-bs-target="#print" data-bs-toggle="modal"><i class="la la-print mt-2" style="font-size: 30px;color: var(--bs-teal);text-align: center;"></i>
+                                                <h6 class="mt-2" style="font-size: 12px;color: var(--bs-teal);">Cetak</h6>
+                                            </a></div>
+                                        <div class="col-1 d-md-flex justify-content-md-center align-items-md-start" style="text-align: center;"><a href="#" style="text-align: center;" data-bs-target="#action" data-bs-toggle="modal"><i class="la la-ellipsis-v mt-2" style="font-size: 30px;color: var(--bs-teal);text-align: center;"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-6" style="padding-right: 10px;">
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;">
+                            <div class="card-body" style="padding: 10px;padding-right: 10px;padding-left: 10px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data Identitas</h6>
+                                                </div>
+                                                <div class="col-4 offset-2 d-md-flex justify-content-md-end align-items-md-start" style="text-align: right;">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;color: var(--bs-teal);"></h6><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data KTP</h6>
+                                                </div>
+                                                <div class="col-4 offset-2"><a href="#" style="text-align: center;" data-bs-target="#identitas" data-bs-toggle="modal">
+                                                        <h6 class="text-end mt-2" style="font-size: 12px;color: var(--bs-teal);">Lihat Detail</h6>
+                                                    </a></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="row">
+                                                                <div class="col-12 text-start">
+                                                                    <h6 class="text-secondary" style="font-size: 12px;">NIK</h6>
+                                                                </div>
+                                                                <div class="col-12 text-end">
+                                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="row">
+                                                                <div class="col-12 text-start">
+                                                                    <h6 class="text-secondary" style="font-size: 12px;">Nama</h6>
+                                                                </div>
+                                                                <div class="col-12 text-end">
+                                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Ardian</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="row">
+                                                                <div class="col-12 text-start">
+                                                                    <h6 class="text-secondary" style="font-size: 12px;">Alamat</h6>
+                                                                </div>
+                                                                <div class="col-12 text-end">
+                                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Jl. Letjen Sutoyo 102</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6" style="padding-left: 10px;">
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;">
+                            <div class="card-body" style="padding: 10px;padding-right: 10px;padding-left: 10px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-6 text-center">
+                                                    <h6 class="text-start text-dark" style="font-size: 14px;color: var(--bs-teal);">Status</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-2 text-center"><i class="la la-file-text mt-2" style="font-size: 30px;color: var(--bs-teal);"></i>
+                                                    <h6 class="mt-2" style="font-size: 12px;color: var(--bs-teal);">Pengajuan</h6>
+                                                </div>
+                                                <div class="col-2 text-center"><i class="la la-check mt-2" style="font-size: 30px;color: var(--bs-secondary);"></i>
+                                                    <h6 class="text-secondary mt-2" style="font-size: 12px;">Disetujui</h6>
+                                                </div>
+                                                <div class="col-2 text-center"><i class="la la-history mt-2" style="font-size: 30px;color: var(--bs-secondary);"></i>
+                                                    <h6 class="text-secondary mt-2" style="font-size: 12px;">Diproses</h6>
+                                                </div>
+                                                <div class="col-2 text-center"><i class="la la-expand mt-2" style="font-size: 30px;color: var(--bs-secondary);"></i>
+                                                    <h6 class="text-secondary mt-2" style="font-size: 12px;">Aktif</h6>
+                                                </div>
+                                                <div class="col-2 text-center"><i class="la la-check-square-o mt-2" style="font-size: 30px;color: var(--bs-secondary);"></i>
+                                                    <h6 class="text-secondary mt-2" style="font-size: 12px;">Selesai</h6>
+                                                </div>
+                                                <div class="col-2 text-center"><i class="la la-times mt-2" style="font-size: 30px;color: var(--bs-secondary);"></i>
+                                                    <h6 class="text-secondary mt-2" style="font-size: 12px;">Ditolak</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-3" style="padding-right: 10px;">
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;">
+                            <div class="card-body" style="padding: 10px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data Analisa</h6>
+                                        </div>
+                                        <div class="col-3 d-md-flex justify-content-md-end align-items-md-start"><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Pekerjaan</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Programmer</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Deskripsi Pekerjaan</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Programmer</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data Finansial</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Tanggungan Anak</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">0&nbsp;</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Penghasilan Perbulan</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 2.123.123</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Pengeluaran Perbulan</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 1.123.123</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Cashflow</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;color: var(--bs-teal);font-weight: bold;">Rp. 1.000.000</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data Kerabat</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Nama</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Kurniawan</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Hubungan Keluarga</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Saudara</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Telepon</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">0822-3809-0008</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-start">
+                                                    <h6 class="text-secondary" style="font-size: 12px;">Alamat</h6>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Jl. Letjen Sutoyo 102</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="padding-right: 10px;padding-left: 10px;">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;">
+                                    <div class="card-body" style="padding: 10px;padding-right: 0px;padding-left: 0px;">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Informasi Kredit</h6>
+                                                </div>
+                                                <div class="col-3"><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tujuan</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Modal Usaha</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Nominal</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 10.000.000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tipe Bunga</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Flat</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tenor</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">10 x 1 Bulan</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Bunga</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1% / Bulan</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Denda</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">0.1% / Hari</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Biaya Administrasi</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 10.000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Biaya Legalitas</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 10.000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Biaya Asuransi</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 10.000</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Biaya Lain-Lain</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Rp. 10.000</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;">
+                                    <div class="card-body" style="padding: 10px;padding-right: 0px;padding-left: 0px;">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Penagihan Terakhir</h6>
+                                                </div>
+                                                <div class="col-3 d-md-flex justify-content-md-end align-items-md-start"><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tanggal</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">20/01/2022</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Nama Penagih</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Ardian</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Hasil Penagihan</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Akan dibayar seminggu lagi</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tanggal Follow Up</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">27/01/2022</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h6 style="font-size: 12px;font-weight: bold;color: var(--bs-teal);">Lihat Riwayat Penagihan</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 0px;padding-bottom: 10px;padding-left: 0px;">
+                                    <div class="card-body" style="padding: 10px;padding-right: 0px;padding-left: 0px;">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-9">
+                                                    <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Catatan Terakhir</h6>
+                                                </div>
+                                                <div class="col-3"><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Tanggal</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">20/01/2022</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12 text-start">
+                                                            <h6 class="text-secondary" style="font-size: 12px;">Catatan</h6>
+                                                        </div>
+                                                        <div class="col-12 text-end">
+                                                            <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Disetujui</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <h6 style="font-size: 12px;font-weight: bold;color: var(--bs-teal);">Lihat Riwayat Catatan</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;">
+                            <div class="card-body" style="padding: 10px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Informasi Jaminan</h6>
+                                        </div>
+                                        <div class="col-3"><i class="la la-edit d-md-flex justify-content-md-end align-items-md-start" style="font-size: 16px;color: var(--bs-teal);text-align: right;"></i></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Nama</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Tipe Dokumen</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Nomor Surat</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Nilai Jaminan</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">Surat Tanah</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">SHM</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">DOK-1234-1234</h6>
+                                        </div>
+                                        <div class="col-3 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">Rp. 100.000.000</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-3" style="border-radius: 2rem;border-style: none;padding-top: 10px;padding-right: 15px;padding-bottom: 10px;padding-left: 15px;">
+                            <div class="card-body" style="padding: 10px;">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Riwayat Kredit</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Nomor Kredit</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Tipe Bunga</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Tanggal Kredit</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Nominal</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;">Status</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 class="text-secondary" style="font-size: 12px;font-weight: bold;"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">KR-1234-1234</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">Flat</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">12/12/2021</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">Rp. 5.000.000</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;">Selesai</h6>
+                                        </div>
+                                        <div class="col-2 text-start">
+                                            <h6 style="font-size: 12px;font-weight: bold;color: var(--bs-teal);">Detail</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="action">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Saya mau</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Buat Penagihan Baru</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Buat Catatan Baru</span></a></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><a href="#" data-bs-toggle="modal" style="width: 100%;height: 100%;color: inherit;padding-top: 20px;padding-bottom: 20px;"><span style="font-size: 14px;">Bayar Angsuran</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="identitas">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Data Identitas</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data KTP</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">NIK</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Nama</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Ardian</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Tanggal Lahir</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">23/03/1997</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Jenis Kelamin</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Pria</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="container-fluid mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Alamat</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">RT/RW</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Kelurahan/Desa</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="container-fluid mt-4">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Kecamatan</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Lowokwaru</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Kota</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">Malang</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data KK</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">NKK</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">1234-1234-1234</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h6 class="text-dark" style="font-size: 14px;color: var(--bs-teal);">Data Lain-Lain</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-12 text-start">
+                                                <h6 class="text-secondary" style="font-size: 12px;">Telepon</h6>
+                                            </div>
+                                            <div class="col-12 text-end">
+                                                <h6 class="text-start" style="font-size: 12px;font-weight: bold;">0822-3809-0008</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="print">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cetak</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Legalitas</span></li>
+                        <li class="list-group-item clickable" style="padding: 7px 13px;padding-top: 10px;padding-bottom: 10px;border-style: none;border-top-width: 0px;border-right-width: 0px;border-right-style: none;border-bottom-width: 1px;border-bottom-style: none;border-left-width: 0px;"><span style="font-size: 14px;">Laporan Angsuran</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
